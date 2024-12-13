@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import connectDB from './config/db.js';
-import authRoutes from './routes/auth.js';
-import carListingRoutes from './routes/carListing.js';
-import authenticateToken from './middlewares/authMiddleware.js';
+import connectDB from './src/config/db.js';
+import authRoutes from './src/routes/auth.js';
+import carListingRoutes from './src/routes/carListing.js';
+import authenticateToken from './src/middlewares/authMiddleware.js';
 const app = express();
 
 // Middleware for cors eror and 
